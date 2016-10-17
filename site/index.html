@@ -94,12 +94,19 @@
 
             <div class="travel-tabs col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
               <ul class="nav nav-inline nav-tabs" id="myTab">
-                <li class="nav-item  africa-asia col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4"><a class="nav-item"href="#destination"data-toggle="tab">By Destination</a></li>
-                <li class="americas-australasia col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4"><a class="nav-item"href="#species" data-toggle="tab">By Species</a></li>
+                <li class="nav-item  africa-asia col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                  <a class="nav-item" href="#destination" data-toggle="tab" aria-controls="destination" role="tab">
+                    By Destination
+                  </a>
+                </li>
+                <li class="americas-australasia col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                  <a class="nav-item" href="#species" aria-controls="species" role="tab" data-toggle="tab">
+                    By Species</a>
+                </li>
                 <li class="anrarctika-europe col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4"><a class="nav-item" href="#tour-type" data-toggle="tab">By Tour Type</a></li>
               </ul>
               <div class="tab-content">
-                <div class=" tab-pane-col-1" id="destination">
+                <div class="tab-pane" id="destination"  role="tabpanel">
                   <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 column-mini">
                     <div class="thumbnail">
                       <div class="africa"></div>
@@ -120,7 +127,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="tab-pane-col-2" id="species">
+                <div class="tab-pane active" id="species" role="tabpanel">
                   <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 column-mini">
                     <div class="thumbnail">
                       <div class="america"></div>
@@ -140,7 +147,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="tab-pane-col-3" id="tour-type">
+                <div class="tab-pane" id="tour-type" role="tabpanel">
                   <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 column-mini">
                     <div class="thumbnail">
                       <div class="antarctica"></div>
