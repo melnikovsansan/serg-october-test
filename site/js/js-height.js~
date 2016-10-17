@@ -1,0 +1,5 @@
+$('data-toggle=tab').click(function (e) {
+console.log(1)
+  e.preventDefault()
+  $(this).tab('show')
+})
